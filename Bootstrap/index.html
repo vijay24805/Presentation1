@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="description" content="A demo on twitter Bootstrap">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+      <!-- Below line is added to make website adaptable to mobile version also -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>Bootstrap Demo</title>
+      <!-- css stylesheets -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- added to support sliders on page -->
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- fixed navigation bar -->
+      <!--
+         The nav bar component is available at the link - http://getbootstrap.com/components/#navbar , and the code can just be pasted to 
+         the website to integrate the navbar component.
+         -->
+      <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#b-menu-1">
+               <span class="sr-only">Navigation Toggle</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand">Bootstrap website</a>
+            </div>
+            <div class="collapse navbar-collapse" id="b-menu-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">Log In</a></li>
+                  <li><a href="#">Sign up</a></li>
+                  <li><a href="#">Search</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Feature 1</a></li>
+                        <li><a href="#">Feature 2</a></li>
+                        <li><a href="#">Feature 3</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Showing slides below nav bar-->
+      <div id="slider" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <!-- Showing slides below nav bar -->
+            <div class="item active">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <h1>Getting started</h1>
+                     <p>An overview of Bootstrap, how to download and <br />use, basic templates and examples, and more.</p>
+                     <p><a class="btn btn-lg btn-default" href="#" role="button">Click</a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <h1>CSS</h1>
+                     <p>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and <br />an advanced grid system.</p>
+                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Click</a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <h1>Components</h1>
+                     <p>Over a dozen reusable components built to provide iconography, dropdowns,<br /> input groups, navigation, alerts, and much more.</p>
+                     <p><a class="btn btn-lg btn-warning" href="#" role="button">Click</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- glyp icons :Includes 200 glyphs in font format from the Glyphicon Halflings set. Glyphicons Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost.
+            Can be found at - http://getbootstrap.com/components/
+            -->
+         <a class="left carousel-control" href="#slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+         <a class="right carousel-control" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+      <!-- main container -->
+      <div class="container">
+         <nav class="navbar navbar-default navbar-static">
+            <div class="navbar-header">
+               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#b-menu-2">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Bootstrap website</a>
+            </div>
+            <div class="collapse navbar-collapse" id="b-menu-2">
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> About</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list"></span> Other <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                        <li><a href="#">Submenu 4</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Submenu 5</a></li>
+                        <li><a href="#">Submenu 6</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Submenu 7</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                  <li data-toggle="modal" data-target="#my-modal-box"><a href="#"><span class="glyphicon glyphicon-share"></span> Share popup</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-sm-9">
+               <!-- jumbotron -->
+               <!-- A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.
+                  Code availbale at http://getbootstrap.com/components/#jumbotron -->
+               <div class="jumbotron">
+                  <h1>Hellow Class</h1>
+                  <p>This is a class demo</p>
+                  <p><a role="button" href="#" class="btn btn-lg btn-success">Sign up today</a></p>
+               </div>
+               <!-- Bootstrap Grod System -->
+               <!-- Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. -->
+               <div class="row">
+                  <!-- column 1 -->
+                  <div class="col-sm-6">
+                     <!-- Different Panels types can be used -->
+                     <!-- box 1 -->
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">heading 1</h3>
+                        </div>
+                        <div class="panel-body">
+                           <p>Body Content</p>
+                           <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                        </div>
+                     </div>
+                     <!-- box 2 -->
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">heading 2</h3>
+                        </div>
+                        <div class="panel-body">
+                           <p>body content</p>
+                           <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- column 2 -->
+                  <div class="col-sm-6">
+                     <!-- box 3 -->
+                     <div class="panel panel-success">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">heading 3</h3>
+                        </div>
+                        <div class="panel-body">
+                           <p>Body content 3</p>
+                           <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                        </div>
+                     </div>
+                     <!-- box 4 -->
+                     <div class="panel panel-warning">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Heading 4</h3>
+                        </div>
+                        <div class="panel-body">
+                           <p>Body Content 4</p>
+                           <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- column 3 (sidebar) -->
+            <div class="col-sm-3 sidebar-offcanvas" id="sidebar">
+               <div class="list-group" role="navigation">
+                  <a href="#" class="list-group-item">Link 1</a>
+                  <a href="#" class="list-group-item">Link 2</a>
+                  <a href="#" class="list-group-item active">Link 3</a>
+                  <a href="#" class="list-group-item">Link 4</a>
+                  <a href="#" class="list-group-item">Link 5</a>
+               </div>
+               <!-- box 5 -->
+               <div class="panel panel-danger">
+                  <div class="panel-heading">
+                     <h3 class="panel-title">Form elements</h3>
+                  </div>
+                  <div class="panel-body">
+                     <form role="form">
+                        <div class="form-group">
+                           <label for="emailField">Email address</label>
+                           <input type="email" class="form-control" id="emailField" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                           <label for="selectField">Type</label>
+                           <select class="form-control" id="selectField">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                           </select>
+                        </div>
+                        <!-- Componenets like Progress Bar can be included By getting the code from 
+                           http://getbootstrap.com/components/#progress -->
+                        <div class="progress progress-striped active">
+                           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                              <span class="sr-only">30% Complete</span>
+                           </div>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                     </form>
+                  </div>
+               </div>
+               <!-- Panel - Info Sample -->
+               <div class="panel panel-info">
+                  <div class="panel-heading">
+                     <h3 class="panel-title">Panel 6 title</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Panel - Info Sample Body</p>
+                     <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                  </div>
+               </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch demo modal
+            </button>
+            <!-- Demonstrating Modal feature from Bootstrap's JS-->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                     </div>
+                     <div class="modal-body">
+                        This is done using Modal plugin feature in Bootstrap's JS
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+               <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" 
+                     data-target=".bs-js-navbar-scrollspy">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Scrollspy demonstartion</a>
+               </div>
+               <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                  <ul class="nav navbar-nav">
+                     <li><a href="#hd1">heading 1</a></li>
+                     <li><a href="#hd2">heading 2</a></li>
+                     <li class="dropdown">
+                        <a href="#" id="navbarDrop1" class="dropdown-toggle" 
+                           data-toggle="dropdown">menu1
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" 
+                           aria-labelledby="navbarDrop1">
+                           <li><a href="#m2" tabindex="-1">menu2</a></li>
+                           <li><a href="#m3" tabindex="-1">menu3</a></li>
+                           <li class="divider"></li>
+                           <li><a href="#m4" tabindex="-1">menu4</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
+               style="height:200px;overflow:auto; position: relative;">
+               <h4 id="hd1">Heading 1</h4>
+               <p>
+                  A wise old owl lived in an oak
+                  The more he saw the less he spoke
+                  The less he spoke the more he heard.
+                  Why can't we all be like that wise old bird?
+               </p>
+               <h4 id="hd2">Heading 2</h4>
+               <p>One variant of the lyrics goes:
+                  Oh, where have you been,
+                  Billy Boy, Billy Boy?
+                  Oh, where have you been,
+                  Charming Billy?
+                  I have been to seek a wife,
+                  She's the joy of my life,
+                  She's a young thing
+                  And cannot leave her mother.
+                  Did she bid you to come in,
+                  Billy Boy, Billy Boy?
+                  Did she bid you to come in,
+                  Charming Billy?
+                  Yes, she bade me to come in,
+                  There's a dimple in her chin.
+                  She's a young thing
+                  And cannot leave her mother.
+               </p>
+               <h4 id="m2">Menu 1</h4>
+               <p>Can she make a cherry pie,
+                  Billy Boy, Billy Boy?
+                  Can she make a cherry pie,
+                  Charming Billy?
+                  She can make a cherry pie,
+                  Quick as a cat can wink an eye,
+                  She's a young thing
+                  And cannot leave her mother.
+                  Did she set for you a chair,
+                  Billy Boy, Billy Boy?
+                  Did she set for you a chair,
+                  Charming Billy?
+                  Yes, she sat for me a chair.
+                  She has ringlets in her hair.
+                  She's a young thing
+                  And cannot leave her mother.
+               </p>
+               <h4 id="m3">Menu 2</h4>
+               <p>How old is she now,
+                  Billy Boy, Billy Boy?
+                  How old is she now,
+                  Charming Billy?
+                  Three times six and four times seven,
+                  Twenty-eight and eleven,
+                  She's a young thing
+                  And cannot leave her mother.
+               </p>
+               <h4 id="m4">Menu 3</h4>
+               <p>    Five little speckled frogs
+                  Sat on a great big log
+                  Eating the most delicious bugs
+                  One jumped into the pool
+                  Where it was nice and cool
+                  Then there were four speckled frogs
+               </p>
+               <p>Hush, little baby, don't say a word,
+                  Mama's gonna buy you a mockingbird.
+                  If that mockingbird won't sing,
+                  Mama's gonna buy you a diamond ring
+                  If that diamond ring turns brass,
+                  Mama's gonna buy you a looking glass.
+               </p>
+            </div>
+         </div>
+		<!-- An example of tooltip feature in bootstrap's javascript -->
+		 <div>
+			<p><a class="tip" data-toggle="tooltip" data-placement="right" title="This is a tooltip"> Tooltip Sample</a></p>
+		 </div>
+         <footer>
+            <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+               <p class="navbar-text">Footer like - About / Feature / Contact Us</p>
+               <p class="navbar-text navbar-right"><a href="#">Bootstrap Class Demo</a></p>
+            </nav>
+         </footer>
+      </div>
+      <!-- add javascripts -->
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+	  <script type="text/javascript">
+		$(function(){
+			$(".tip").tooltip();
+			});
+		</script>
+		
+   </body>
+</html>
